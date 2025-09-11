@@ -1,12 +1,10 @@
 services:
-  web:
-    image: phpmyadmin
-    ports:
-      - 8081:80
-  
   db:
     image: mysql:lts
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD= admin
-    
+  web:
+    image: phpmyadmin
+    ports:
+      - 8081:80
