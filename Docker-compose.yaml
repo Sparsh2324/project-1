@@ -7,7 +7,7 @@ services:
     networks:
       - network1
     volumes:
-      - C:\Sandesh\Study\Project1\:/var/lib/mysql
+      - C:\Sandesh\Study\Project1\Project_Vol:/var/lib/mysql
   web:
     image: phpmyadmin
     restart: always
@@ -16,7 +16,7 @@ services:
     networks:
       - network1
   
-  proxy:
+  web:
     image: nginx
     restart: always
     ports:
