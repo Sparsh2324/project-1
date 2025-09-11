@@ -11,6 +11,8 @@ pipeline {
             steps {
                 sh 'docker compose up -d'
                 sh 'docker compose ps'
+                sh 'docker network ls'
+                sh 'docker volume ls'
             }
         }
     }
