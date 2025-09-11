@@ -4,8 +4,26 @@ services:
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=admin
+    networks:
+      - network1
+    volumes:
+      -C:\Sandesh\Study\Project1\Project_vol:/var/lib/mysql
   web:
     image: phpmyadmin
     restart: always
     ports:
       - 8081:80
+    networks:
+      - network1
+  
+  proxy:
+    image: nginx
+    restart: always
+    ports:
+      -8443:80
+    networks:
+      - network1
+
+networks:
+  network1:
+    driver: bridge
