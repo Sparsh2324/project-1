@@ -16,7 +16,7 @@ services:
     networks:
       - network1
   
-  web:
+  nginx:
     image: nginx
     restart: always
     ports:
