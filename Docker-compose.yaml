@@ -7,7 +7,7 @@ services:
     networks:
       - network1
     volumes:
-      -C:\Sandesh\Study\Project1\Project_vol:/var/lib/mysql
+      - C:\Sandesh\Study\Project1\Project_vol:/var/lib/mysql
   web:
     image: phpmyadmin
     restart: always
