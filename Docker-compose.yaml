@@ -17,7 +17,7 @@ services:
       - network1
   Webserver1:
     build:
-      context: Dockerfile
+      dockerfile: dockerfile
     networks:
       - network1
 
