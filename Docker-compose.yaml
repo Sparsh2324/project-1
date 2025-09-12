@@ -15,13 +15,6 @@ services:
       - 8081:80
     networks:
       - network1  
-  nginx:
-    image: nginx:latest
-    restart: always
-    ports:
-      -8443:80
-    networks:
-      - network1
 
 networks:
   network1:
