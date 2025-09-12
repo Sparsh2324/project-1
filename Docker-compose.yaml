@@ -18,6 +18,7 @@ services:
   Webserver1:
     build:
       dockerfile: dockerfile
+      image: nginx:latest
     networks:
       - network1
 
