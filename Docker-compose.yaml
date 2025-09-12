@@ -15,9 +15,7 @@ services:
       - 8081:80
     networks:
       - network1
-
-services:
-  nginx:
+  Webserver1:
     image: nginx:latest
     ports:
       - 8443:80
