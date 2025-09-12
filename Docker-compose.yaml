@@ -19,6 +19,8 @@ services:
     image: nginx:latest
     ports:
       - 8443:80
+    volumes:
+      - C:\Sandesh\Study\Project1\index.html:/usr/share/nginx/html
     restart: always
 
 networks:
