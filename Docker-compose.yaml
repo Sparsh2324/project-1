@@ -14,7 +14,14 @@ services:
     ports:
       - 8081:80
     networks:
-      - network1  
+      - network1
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 8443:80
+    restart: always
 
 networks:
   network1:
