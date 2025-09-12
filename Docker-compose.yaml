@@ -16,10 +16,10 @@ services:
     networks:
       - network1
   Webserver1:
-    image: nginx:latest
-    ports:
-      - 8443:80
-    restart: always
+    build:
+      context: Dockerfile
+    networks:
+      - network1
 
 networks:
   network1:

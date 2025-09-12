@@ -1,3 +1,5 @@
 FROM	nginx:latest
 WORKDIR	. .
-ADD	./index.html:/usr/share/nginx/html
+COPY	index.html:/usr/share/nginx/html
+Ports   8443:80
+
