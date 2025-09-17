@@ -16,8 +16,10 @@ services:
     networks:
       - network1
   Webserver1:
-    build:
-      dockerfile: dockerfile
+    image: nginx:latest
+    ports:
+      - 8443:80
+    restart: unless_stopped
     networks:
       - network1
     volumes:
