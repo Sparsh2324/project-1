@@ -23,7 +23,6 @@ services:
     networks:
       - network1
     volumes:
-      - ./nginx/web_server:/usr/share/nginx/html:ro
       - ./nginx/config:/etc/nginx:rw
 
 
