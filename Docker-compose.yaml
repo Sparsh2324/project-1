@@ -23,7 +23,7 @@ services:
     networks:
       - network1
     volumes:
-      - ./web_server/index.html:/usr/share/nginx/html:ro
+      - ./web_server:/usr/share/nginx/html:ro
 
 
 networks:
