@@ -19,7 +19,7 @@ services:
     image: nginx:latest
     ports:
       - 8443:80
-    restart: unless_stopped
+    restart: always
     networks:
       - network1
     volumes:
