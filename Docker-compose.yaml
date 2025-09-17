@@ -2,8 +2,8 @@ services:
   db:
     image: mysql:lts
     restart: always
-    environment:
-      - MYSQL_ROOT_PASSWORD=admin
+    env_file:
+      -  mysql.env
     networks:
       - network1
     volumes:
@@ -20,6 +20,9 @@ services:
       dockerfile: dockerfile
     networks:
       - network1
+    volumes:
+      - .:/usr/share/nginx/html:ro
+
 
 networks:
   network1:
